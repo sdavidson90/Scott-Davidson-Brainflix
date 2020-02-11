@@ -32,4 +32,108 @@ body {
 /*Mobile font*/
 /*Desktop/tablet font*/
 /*background image*/
+.header {
+  max-height: 10.5625rem;
+  padding: 0 1rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+}
+
+.header__logo {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__search {
+  width: 90vw;
+  height: 3.03125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.25rem;
+  border: 1px solid #E1E1E1;
+}
+
+.header__search:focus {
+  outline-width: 0;
+}
+
+.header__search-image {
+  height: 1.125rem;
+  width: 1.125rem;
+}
+
+.header__search-bar {
+  resize: none;
+  width: inherit;
+  height: inherit;
+  font-family: 'avenir-regular';
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+
+.header__bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 0.5rem;
+}
+
+.header__bot-upload {
+  height: 3.03125rem;
+  width: 14.5rem;
+  background-color: #0095FF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0.25rem;
+  font-family: 'avenir-regular';
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+
+.header__bot-upload:focus {
+  outline-width: 0;
+}
+
+.header__bot-upload:hover {
+  background-color: #0065AD;
+}
+
+.header__bot-upload-image {
+  padding-right: 1rem;
+}
+
+.header__bot-user {
+  min-width: 3rem;
+  height: 3rem;
+  background-image: url(../assets/Images/Mohan-muruge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  margin-left: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
