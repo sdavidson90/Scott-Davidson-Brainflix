@@ -1,12 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-}
-html,
-body {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  font-weight: unset;
 }
 
 @import "./partials/colors";
@@ -14,3 +10,18 @@ body {
 @import "./partials/breakpoints";
 @import "./partials/mixins";
 @import "./partials/header";
+@import "./partials/hero";
+@import "./partials/about";
+@import "./partials/comments";
+@import "./partials/newcomments";
+@import "./partials/videos";
+
+#root {
+  background-color: $color-white;
+}
+
+@include large {
+  .page__flex {
+    display: flex;
+  }
+}

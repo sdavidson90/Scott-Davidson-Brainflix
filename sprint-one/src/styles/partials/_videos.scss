@@ -1,0 +1,10 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  &__next {
+    font-family: "avenir-demi";
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: $color-silver;
+  }
+}

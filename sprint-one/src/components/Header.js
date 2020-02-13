@@ -1,41 +1,36 @@
 import React from "react";
+import Logo from "../assets/Logo/Logo-brainflix.svg";
+import Search from "../assets/Icons/SVG/Icon-search.svg";
+import Upload from "../assets/Icons/SVG/Icon-upload.svg";
 
-export default function Header() {
+const Header = () => {
   return (
     <div className="header">
       <a className="header__logo" href="../../public/index.html">
-        <img
-          className="header__logo-image"
-          src={require("../assets/Logo/Logo-brainflix.svg")}
-          alt="Brainflix Logo"
-        />
+        <img className="header__logo-image" src={Logo} alt="Brainflix" />
       </a>
       <form className="header__search">
         <input
           className="header__search-image"
           type="image"
-          src={require("../assets/Icons/PNG/Icon-search.png")}
+          src={Search}
           alt="search"
         />
-        <textarea
+        <input
           className="header__search-bar"
           name="search"
-          rows="10"
-          cols="50"
           placeholder="Search"
-        ></textarea>
+          autoComplete="off"
+        />
       </form>
       <div className="header__bot">
         <button className="header__bot-upload">
-          <img
-            className="header__bot-upload-image"
-            src={require("../assets/Icons/SVG/Icon-upload.svg")}
-            alt="Upload"
-          />
+          <img className="header__bot-upload-image" src={Upload} alt="Upload" />
           UPLOAD
         </button>
         <div className="header__bot-user"></div>
       </div>
     </div>
   );
-}
+};
+export default Header;

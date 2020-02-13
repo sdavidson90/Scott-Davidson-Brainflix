@@ -1,0 +1,34 @@
+/*MOBILE SIZING*/
+.hero {
+  background-color: $color-black;
+  height: 57.19vw;
+  &__video {
+    width: 100%;
+    height: 57.19vw;
+  }
+}
+/*TABLET SIZING*/
+@include medium {
+  .hero {
+    display: flex;
+    justify-content: center;
+    height: 52.084vw;
+    // max-height: 33.75rem;
+    &__video {
+      height: 52.084vw;
+      width: 91.147vw;
+      // max-height: 33.75rem;
+      // max-width: 59rem;
+    }
+  }
+}
+/*DESKTOP SIZING*/
+@include large {
+  .hero {
+    height: 33.75rem;
+    &__video {
+      width: 59rem;
+      height: 33.75rem;
+    }
+  }
+}

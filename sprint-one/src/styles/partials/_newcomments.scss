@@ -1,0 +1,75 @@
+/*MOBILE SIZING*/
+.comments__new {
+  font-family: "avenir-demi";
+  width: 100%;
+  color: $color-black;
+  border-bottom: 1px solid $color-mercury;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  margin: 0 auto;
+  line-height: 1.125rem;
+  font-size: 0.8125rem;
+  &-image {
+    height: 3rem;
+    min-width: 3rem;
+    background-color: $color-mercury;
+    border-radius: 2rem;
+    align-self: flex-start;
+    margin-right: 12px;
+  }
+  &-name {
+    font-size: 0.875rem;
+    margin-right: auto;
+    padding-bottom: 1rem;
+    width: 50vw;
+  }
+  &-time {
+    font-family: "avenir-regular";
+    color: $color-silver;
+  }
+  &-comment {
+    font-family: "avenir-regular";
+  }
+}
+.comments__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 72vw;
+}
+/*TABLET SIZING*/
+@include medium {
+  .comments__new {
+    justify-content: left;
+    flex-direction: row;
+    width: 720px;
+    margin: 0 1.5rem 0 1.5rem;
+    padding-left: unset;
+    padding-right: unset;
+    &-name {
+      margin: 0;
+      padding-right: 1rem;
+      width: unset;
+    }
+    &-image {
+      margin-right: 1rem;
+      min-width: 3rem;
+    }
+    &-comment {
+      width: 624px;
+    }
+  }
+  &__container {
+    justify-content: flex-start;
+  }
+}
+/*DESKTOP SIZING*/
+@include large {
+  .comments__new {
+    margin-left: 11.25rem;
+    width: 44.5rem;
+    padding-left: unset;
+    padding-right: unset;
+  }
+}

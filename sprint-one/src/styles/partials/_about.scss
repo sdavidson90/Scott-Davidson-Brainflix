@@ -1,0 +1,80 @@
+/*MOBILE SIZING*/
+.about {
+  padding: 2rem 1rem 2.5rem 1rem;
+  background-color: $color-white;
+  &__title {
+    @include mobile-header;
+  }
+  &__info {
+    padding: 1rem 0 2rem 0;
+    display: flex;
+    align-items: center;
+    &-author {
+      @include mobile-sub;
+    }
+    &-date {
+      @include mobile-para;
+      color: $color-silver;
+      padding-left: 0.5rem;
+    }
+  }
+  &__stats {
+    display: flex;
+    @include mobile-sub;
+    font-family: "avenir-regular";
+    padding-bottom: 1.5rem;
+    &-view-count {
+      padding: 0 1rem 0 0.5rem;
+    }
+    &-likes-count {
+      padding-left: 0.5rem;
+    }
+  }
+  &__border {
+    border-bottom: 1px solid $color-mercury;
+  }
+  &__description {
+    @include mobile-para;
+    padding-top: 1.5rem;
+  }
+}
+/*TABLET SIZING*/
+@include medium {
+  .about {
+    padding: 3rem 1.5rem 4rem 1.5rem;
+    &__title {
+      @include h1-header;
+    }
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__info {
+      &-author {
+        @include h3-sub;
+      }
+      &-date {
+        @include h4-para;
+        color: $color-silver;
+      }
+    }
+    &__description {
+      @include h4-para;
+      width: 33rem;
+    }
+  }
+}
+
+/*DESKTOP SIZING*/
+@include large {
+  .about {
+    margin-left: 11.25rem;
+    width: 44.5rem;
+    padding-right: unset;
+    padding-left: unset;
+    &__stats-likes-count {
+      padding-right: 2rem;
+    }
+  }
+}
