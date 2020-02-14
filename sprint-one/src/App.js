@@ -97,19 +97,20 @@ class App extends React.Component {
     ]
   };
   render() {
-    console.log(this.state);
     return (
       <div>
         <Header />
         <Hero />
         <div className="page__flex">
           <div>
-            <About />
+            <About mainVideoInfo={this.state.mainVideo} />
             <Comments />
-            <NewComments test={this.state.mainVideo[0].comments} />
+            <div className="comment__container                                    q">
+              <NewComments newComments={this.state.mainVideo[0].comments} />
+            </div>
           </div>
           <div className="page__videos">
-            <Videos />
+            <Videos sideVideos={this.state.sideVideo} />
           </div>
         </div>
       </div>
@@ -117,5 +118,3 @@ class App extends React.Component {
   }
 }
 export default App;
-
-// DO A MAP FUNCTION ON THE COMMENTS AND STUFF

@@ -685,10 +685,8 @@
   height: 4.375rem;
   margin-right: 1rem;
   border-radius: 4px;
-}
-
-.video__sub {
-  width: 9.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .video__sub-title {
@@ -708,6 +706,13 @@
   font-size: 0.875rem;
 }
 
+/*DESKTOP SIZING*/
+@media only screen and (min-width: 1440px) {
+  .video {
+    padding-right: 11.25rem;
+  }
+}
+
 #root {
   background-color: #FFFFFF;
 }
@@ -720,6 +725,9 @@
   }
   .page__videos {
     border-left: 1px solid #E1E1E1;
+  }
+  .comment__container {
+    padding-bottom: 1.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
