@@ -195,6 +195,10 @@
   height: 57.19vw;
 }
 
+.hero__video:focus {
+  outline-width: 0;
+}
+
 /*TABLET SIZING*/
 @media only screen and (min-width: 768px) {
   .hero {
@@ -316,6 +320,9 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .about__info {
+    padding: 1.5rem 0;
+  }
   .about__info-author {
     font-family: "avenir-demi";
     font-size: 1rem;
@@ -328,6 +335,9 @@
     line-height: 1.375rem;
     color: #323232;
     color: #AFAFAF;
+  }
+  .about__stats {
+    padding: 1.5rem 0;
   }
   .about__description {
     font-family: "avenir-regular";
@@ -636,12 +646,14 @@
 @media only screen and (min-width: 1440px) {
   .comments__new {
     margin-left: 11.25rem;
+    margin-right: unset;
     width: 44.5rem;
     padding-left: unset;
     padding-right: unset;
   }
 }
 
+/*MOBILE SIZING*/
 .video {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,6 +662,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 1rem;
 }
 
 .video__next {
@@ -657,6 +670,42 @@
   font-size: 0.75rem;
   line-height: 1.25rem;
   color: #AFAFAF;
+  padding: 2.5rem 0;
+}
+
+.video__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1.5rem;
+}
+
+.video__container-image {
+  width: 7.5rem;
+  height: 4.375rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+
+.video__sub {
+  width: 9.5rem;
+}
+
+.video__sub-title {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: #323232;
+  padding-bottom: 1rem;
+  line-height: 1.1rem;
+}
+
+.video__sub-name {
+  font-family: "avenir-regular";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  color: #323232;
+  font-size: 0.875rem;
 }
 
 #root {
@@ -668,6 +717,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .page__videos {
+    border-left: 1px solid #E1E1E1;
   }
 }
 /*# sourceMappingURL=main.css.map */

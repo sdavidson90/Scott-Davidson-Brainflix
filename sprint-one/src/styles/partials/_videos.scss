@@ -1,10 +1,39 @@
+/*MOBILE SIZING*/
 .video {
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
+
   &__next {
     font-family: "avenir-demi";
     font-size: 0.75rem;
     line-height: 1.25rem;
     color: $color-silver;
+    padding: 2.5rem 0;
+  }
+  &__container {
+    display: flex;
+    padding-bottom: 1.5rem;
+    // height: 70px;
+    &-image {
+      // width: 37.5vw;
+      // height: 21.876vw;
+      width: 7.5rem;
+      height: 4.375rem;
+      margin-right: 1rem;
+      border-radius: 4px;
+    }
+  }
+  &__sub {
+    width: 9.5rem;
+    &-title {
+      @include mobile-sub;
+      padding-bottom: 1rem;
+      line-height: 1.1rem;
+    }
+    &-name {
+      @include mobile-para;
+      font-size: 0.875rem;
+    }
   }
 }

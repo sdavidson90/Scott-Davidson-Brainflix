@@ -51,6 +51,7 @@
       justify-content: space-between;
     }
     &__info {
+      padding: 1.5rem 0;
       &-author {
         @include h3-sub;
       }
@@ -58,6 +59,9 @@
         @include h4-para;
         color: $color-silver;
       }
+    }
+    &__stats {
+      padding: 1.5rem 0;
     }
     &__description {
       @include h4-para;
