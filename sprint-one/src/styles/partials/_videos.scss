@@ -25,16 +25,22 @@
     }
   }
   &__sub {
-    // width: 10rem;
     &-title {
       @include mobile-sub;
       padding-bottom: 1rem;
       line-height: 1.1rem;
+      width: 9.5rem;
     }
     &-name {
       @include mobile-para;
       font-size: 0.875rem;
     }
+  }
+}
+/*TABLET SIZING*/
+@include medium {
+  .video__sub-title {
+    width: 11rem;
   }
 }
 /*DESKTOP SIZING*/

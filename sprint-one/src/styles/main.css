@@ -553,6 +553,10 @@
 }
 
 /*MOBILE SIZING*/
+.comment__container {
+  margin: 0 1rem;
+}
+
 .comments__new {
   font-family: "avenir-demi";
   width: 100%;
@@ -567,8 +571,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem 1rem;
-  margin: 0 auto;
+  padding: 1.5rem 0;
   line-height: 1.125rem;
   font-size: 0.8125rem;
 }
@@ -587,7 +590,7 @@
   font-size: 0.875rem;
   margin-right: auto;
   padding-bottom: 1rem;
-  width: 50vw;
+  width: 49vw;
 }
 
 .comments__new-time {
@@ -610,6 +613,9 @@
 
 /*TABLET SIZING*/
 @media only screen and (min-width: 768px) {
+  .comment__container {
+    margin: 0 1.5rem;
+  }
   .comments__new {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -619,7 +625,6 @@
         -ms-flex-direction: row;
             flex-direction: row;
     width: 720px;
-    margin: 0 1.5rem 0 1.5rem;
     padding-left: unset;
     padding-right: unset;
   }
@@ -650,6 +655,9 @@
     width: 44.5rem;
     padding-left: unset;
     padding-right: unset;
+  }
+  .comment__container {
+    margin: unset;
   }
 }
 
@@ -696,6 +704,7 @@
   color: #323232;
   padding-bottom: 1rem;
   line-height: 1.1rem;
+  width: 9.5rem;
 }
 
 .video__sub-name {
@@ -704,6 +713,13 @@
   line-height: 1.125rem;
   color: #323232;
   font-size: 0.875rem;
+}
+
+/*TABLET SIZING*/
+@media only screen and (min-width: 768px) {
+  .video__sub-title {
+    width: 11rem;
+  }
 }
 
 /*DESKTOP SIZING*/

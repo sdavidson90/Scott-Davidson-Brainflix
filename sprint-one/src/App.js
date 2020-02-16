@@ -38,13 +38,13 @@ class App extends React.Component {
       },
       {
         id: "1aivjruutn6a",
-        title: "Les Houches The Hidden Gem Of The Chamonix",
+        title: "Les Houches The Hidden Gem Of The ...",
         channel: "Cornelia Blair",
         image: "https://i.imgur.com/yFS8EBr.jpg"
       },
       {
         id: "1a3cjruucpf7",
-        title: "Travel Health Useful Medical Information For",
+        title: "Travel Health Useful Medical Information ...",
         channel: "Glen Harper",
         image: "https://i.imgur.com/MMDMgD7.jpg"
       },
@@ -105,7 +105,7 @@ class App extends React.Component {
           <div>
             <About mainVideoInfo={this.state.mainVideo} />
             <Comments />
-            <div className="comment__container                                    q">
+            <div className="comment__container">
               <NewComments newComments={this.state.mainVideo[0].comments} />
             </div>
           </div>
