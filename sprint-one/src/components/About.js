@@ -11,7 +11,7 @@ const About = ({ mainVideoInfo }) => {
           <div className="about__container">
             <div className="about__info">
               <h2 className="about__info-author">By {object.channel}</h2>
-              <h4 className="about__info-date">12/18/2018</h4>
+              <h4 className="about__info-date">{object.timestamp}</h4>
             </div>
             <div className="about__stats">
               <img src={Views} className="about__stats-view" alt="Views" />

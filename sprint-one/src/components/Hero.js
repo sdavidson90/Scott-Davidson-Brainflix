@@ -8,6 +8,8 @@ const Hero = () => {
       <video className="hero__video" controls poster={Poster}>
         <source src={Video} type="video/mp4" />
       </video>
+
+      {/* LEAVING THIS HERE FOR FUTURE IMPLEMENTATION */}
       {/* <div className="hero__controls">
         <button type="button"></button>
         <div>

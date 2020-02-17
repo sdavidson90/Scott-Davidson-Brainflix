@@ -91,7 +91,7 @@ class App extends React.Component {
         likes: "110,985",
         duration: "type of <string>",
         video: "type of <string>",
-        timestamp: "type of <number>",
+        timestamp: "12/18/2018",
         comments: comment
       }
     ]
