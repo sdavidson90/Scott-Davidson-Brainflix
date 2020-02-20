@@ -13,22 +13,26 @@ import React from "react";
 class App extends React.Component {
   state = {
     sideVideos: [],
-    mainVideo: []
+    mainVideo: [],
+    comments: []
   };
   componentDidMount() {
     axios
       .get("https://project-2-api.herokuapp.com/videos?api_key=1")
       .then(response => {
         const sideVideos = response.data;
-        console.log(sideVideos);
         axios
           .get(
-            `https://project-2-api.herokuapp.com/videos/1ainjruutd1j?api_key=1`
+            "https://project-2-api.herokuapp.com/videos/1aivjruutn6a?api_key=1"
           )
           .then(response => {
             const mainVideo = response.data;
-            console.log(mainVideo);
-            this.setState({ mainVideo, sideVideos });
+            const comments = response.data.comments;
+            this.setState({
+              sideVideos,
+              mainVideo: [mainVideo],
+              comments
+            });
           });
       });
   }
@@ -43,7 +47,7 @@ class App extends React.Component {
             <About mainVideo={this.state.mainVideo} />
             <Comments />
             <div className="comment__container">
-              {/* <NewComments newComments={this.state.mainVideo.comments} /> */}
+              <NewComments comments={this.state.comments} />
             </div>
           </div>
           <div className="page__videos">

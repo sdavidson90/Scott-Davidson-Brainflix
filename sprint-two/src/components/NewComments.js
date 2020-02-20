@@ -1,7 +1,7 @@
 import React from "react";
 
-const NewComments = ({ newComments }) => {
-  const newArr = newComments.map((object, index) => {
+const NewComments = ({ comments }) => {
+  const newArr = comments.map((object, index) => {
     return (
       <div key={index} className="comments__new">
         <div className="comments__new-image"></div>
