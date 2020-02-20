@@ -5,7 +5,12 @@ const Videos = ({ sideVideos }) => {
   const vidArr = sideVideos.map((object, index) => {
     return (
       <Router>
-        <Link key={index} id={object.id} className="video__container">
+        <Link
+          to={`/video/${object.id}`}
+          key={index}
+          id={object.id}
+          className="video__container"
+        >
           <img
             className="video__container-image"
             src={object.image}
