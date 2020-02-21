@@ -193,6 +193,8 @@
 .hero__video {
   width: 100%;
   height: 57.19vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hero__video:focus {
@@ -703,9 +705,14 @@
   font-size: 0.875rem;
   line-height: 1.375rem;
   color: #323232;
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
   line-height: 1.1rem;
-  width: 9.5rem;
+  width: 47.5vw;
+  max-width: 11rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .video__sub-name {
