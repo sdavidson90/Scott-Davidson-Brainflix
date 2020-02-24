@@ -25,7 +25,7 @@ const Header = () => {
         />
       </form>
       <div className="header__bot">
-        <Link to="./upload">
+        <Link to="/upload">
           <button className="header__bot-upload">
             <img
               className="header__bot-upload-image"

@@ -1,0 +1,133 @@
+/*MOBILE SIZING*/
+.upload {
+  border-top: 1px solid $color-mercury;
+  &__margin {
+    margin: 0 1rem;
+  }
+  &__title {
+    @include mobile-header;
+    padding: 1.5rem 0 2rem 0;
+  }
+  &__description {
+    @include mobile-para;
+    color: $color-silver;
+    font-family: "avenir-demi";
+  }
+  &__image {
+    width: 100%;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+  }
+  &__form {
+    &-title {
+      width: 100%;
+      background-color: $color-alabaster;
+      border-radius: 0.25rem;
+      border: 1.5px solid $color-mercury;
+      padding: 0.625rem;
+      @include mobile-para;
+      margin-bottom: 1.5rem;
+      resize: none;
+    }
+    &-description {
+      width: 100%;
+      height: 143px;
+      background-color: $color-alabaster;
+      border-radius: 0.25rem;
+      border: 1.5px solid $color-mercury;
+      padding: 0.625rem;
+      padding-bottom: 3rem;
+      @include mobile-para;
+      margin-bottom: 2rem;
+      resize: none;
+    }
+    &-title:focus,
+    &-description:focus {
+      border: 1.5px solid $color-brainflixblue;
+      outline-width: 0;
+    }
+  }
+  &__button {
+    &-container {
+      padding-bottom: 1rem;
+    }
+    &-publish,
+    &-cancel {
+      @include mobile-sub;
+      height: 48px;
+      width: 100%;
+      background-color: $color-brainflixblue;
+      color: $color-white;
+      border: none;
+      border-radius: 0.25rem;
+    }
+    &-cancel {
+      background-color: $color-white;
+      color: $color-brainflixblue;
+    }
+    &-publish:focus,
+    &-cancel:focus {
+      outline-width: 0;
+    }
+  }
+}
+
+/*TABLET SIZING*/
+@include medium {
+  .upload {
+    &__margin {
+      margin: 0 1.5rem;
+    }
+    &__title {
+      @include h1-header;
+      padding: 3rem 0 2rem 0;
+      margin-bottom: 2.5rem;
+      border-bottom: 1.5px solid $color-mercury;
+    }
+    &__image {
+      height: 11.4375rem;
+      width: 21.5rem;
+      margin-bottom: 2.5rem;
+    }
+    &__form-description {
+      margin-bottom: 2.5rem;
+    }
+    &__button-container {
+      border-top: 1.5px solid $color-mercury;
+      padding: 2.5rem 0 10rem;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    &__button-publish {
+      width: 10rem;
+    }
+    &__button-cancel {
+      width: auto;
+      margin-right: 3rem;
+    }
+  }
+}
+
+/*DESKTOP SIZING*/
+@include large {
+  .upload {
+    &__margin {
+      margin: 0 11.25rem;
+    }
+    &__flex {
+      display: flex;
+      &-two {
+        margin-left: 1.5rem;
+        width: 100%;
+      }
+    }
+    &__description {
+      padding-bottom: 0.4375rem;
+    }
+    &__form-title {
+    }
+    &__form-description {
+      height: 5.875rem;
+    }
+  }
+}

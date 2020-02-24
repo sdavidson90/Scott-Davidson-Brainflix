@@ -7,16 +7,6 @@ const Hero = props => {
       <video className="hero__video" controls poster={props.hero}>
         <source src={Video} type="video/mp4" />
       </video>
-
-      {/* <div className="hero__controls">
-        <button type="button"></button>
-        <div>
-          <input type="range"></input>
-          <span></span>
-        </div>
-        <button type="button"></button>
-        <button type="button"></button>
-      </div> */}
     </div>
   );
 };

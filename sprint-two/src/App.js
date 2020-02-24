@@ -25,6 +25,5 @@ export default class App extends Component {
   }
 }
 
-//REMEMBER TO WORRY ABOUT THE SCROLL BAR AFFECTING THE ST00PID NAV BAR!!!
 //UUID
 //POST COMMENTS

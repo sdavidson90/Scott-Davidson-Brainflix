@@ -9,13 +9,14 @@ import axios from "axios";
 // "api_key": "6b4fc32f-451c-43e7-ad20-e5ea94febd8a"
 
 class Home extends React.Component {
+  // SETTING EMPTY STATE
   state = {
     sideVideos: [],
     mainVideo: [],
     comments: [],
     allVideos: []
   };
-
+  //PULLING DATA OFF HEROKU
   componentDidMount() {
     axios
       .get(
@@ -44,6 +45,7 @@ class Home extends React.Component {
       });
   }
 
+  //SWITCHING VIDEOS
   componentDidUpdate(prevProps) {
     if (prevProps.match !== this.props.match) {
       axios
@@ -61,9 +63,10 @@ class Home extends React.Component {
     }
   }
 
+  //HTML RENDER/RETURN
   render() {
     if (this.state.mainVideo.length === 0) {
-      return <h1>join the navy</h1>;
+      return <div></div>;
     }
     return (
       <div>
@@ -71,7 +74,7 @@ class Home extends React.Component {
         <div className="page__flex">
           <div>
             <About mainVideo={this.state.mainVideo} />
-            <Comments />
+            <Comments comments={this.state.comments} />
             <div className="comment__container">
               <NewComments comments={this.state.comments} />
             </div>

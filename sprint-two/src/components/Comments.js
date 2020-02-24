@@ -1,9 +1,9 @@
 import React from "react";
 
-const Comments = () => {
+const Comments = props => {
   return (
     <div className="comments">
-      <h1 className="comments__title">3 Comments</h1>
+      <h1 className="comments__title">{props.comments.length} Comments</h1>
       <div className="comments__input">
         <div className="comments__input-photo"></div>
         <div className="comments__input-info">
