@@ -1,0 +1,138 @@
+/*MOBILE SIZING*/
+.comments {
+  background-color: $color-white;
+  padding: 0 1rem;
+  font-family: "avenir-demi";
+  color: $color-silver;
+  line-height: 1.25rem;
+  font-size: 0.75rem;
+  &__title {
+    @include mobile-sub;
+    color: $color-black;
+    padding: 0 0 2rem 0;
+  }
+
+  &__input {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $color-mercury;
+    &-photo {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 2rem;
+      margin-top: 1.5rem;
+      margin-right: 1rem;
+      background-image: url(../assets/Images/Mohan-muruge.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &-text {
+      height: 7.25rem;
+    }
+    &-info-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      padding-bottom: 1.5rem;
+      width: 14rem;
+      &-comment {
+        width: 14rem;
+        height: 6rem;
+        background-color: $color-alabaster;
+        border-radius: 0.25rem;
+        border: 1.5px solid $color-mercury;
+        padding: 0.625rem;
+        @include mobile-para;
+        resize: none;
+      }
+      &-comment:focus {
+        border: 1.5px solid $color-brainflixblue;
+        outline-width: 0;
+      }
+      &-submit {
+        background-color: $color-brainflixblue;
+        color: $color-white;
+        font-family: "avenir-demi";
+        height: 3rem;
+        width: 14rem;
+        border-radius: 4px;
+        border: none;
+        font-size: 0.8125rem;
+        margin-top: 1rem;
+        &:focus {
+          outline-width: 0;
+        }
+        &:hover {
+          background-color: $color-brainflixblue-dark;
+        }
+      }
+    }
+  }
+}
+
+/*TABLET SIZING*/
+@include medium {
+  .comments {
+    padding: 0 1.5rem 0 1.5rem;
+    &__title {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+      padding: 0 0 2rem 0;
+      @include h3-sub;
+    }
+    &__input {
+      justify-content: left;
+      padding-bottom: 1.5rem;
+      &-photo {
+        margin-right: 1.25rem;
+        margin-top: unset;
+        align-self: flex-end;
+      }
+      &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: auto;
+      }
+      &-button {
+        align-self: flex-end;
+      }
+      &-info {
+        align-items: center;
+        &-form {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: right;
+          padding: unset;
+          &-comment {
+            height: 3rem;
+            width: 27.5rem;
+            margin: unset;
+          }
+          &-submit {
+            width: 160px;
+            align-self: flex-end;
+            margin-right: 2.5rem;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*DESKTOP SIZING*/
+@include large {
+  .comments {
+    margin-left: 11.25rem;
+    width: 44.5rem;
+    padding: unset;
+    &__input-text {
+      width: 436px;
+    }
+    &__input-info-form-comment {
+      width: 436px;
+    }
+  }
+}

@@ -1,6 +1,18 @@
 import React from "react";
+import axios from "axios";
 
 const Comments = props => {
+  click = () => {
+    axios
+      .post(
+        `https://project-2-api.herokuapp.com/videos/${this.props.match.params.id}?api_key=6b4fc32f-451c-43e7-ad20-e5ea94febd8a`,
+        comment
+      )
+      .then(res => {
+        console.log(res.data);
+      });
+  };
+
   return (
     <div className="comments">
       <h1 className="comments__title">{props.comments.length} Comments</h1>
@@ -19,7 +31,10 @@ const Comments = props => {
               ></textarea>
             </div>
             <div className="comments__input-button">
-              <button className="comments__input-info-form-submit">
+              <button
+                className="comments__input-info-form-submit"
+                onClick={this.click}
+              >
                 COMMENT
               </button>
             </div>
