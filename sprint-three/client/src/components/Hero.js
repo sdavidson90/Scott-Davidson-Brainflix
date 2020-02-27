@@ -1,6 +1,5 @@
 import React from "react";
 import Video from "../assets/Video/BrainStation Sample Video.mp4";
-import play from "../assets/Icons/SVG/Icon-play.svg";
 
 const Hero = props => {
   return (
