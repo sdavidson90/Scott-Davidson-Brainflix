@@ -10,6 +10,7 @@ router.get("/", (req, res) => {
     return {
       id: video.id,
       title: video.title,
+      channel: video.channel,
       image: video.image
     };
   });
@@ -34,6 +35,7 @@ router.post("/", (req, res) => {
     id: helper.getNewId(),
     title: req.body.title,
     description: req.body.description,
+    channel: "Scott Davidson",
     image: req.body.image,
     comments: []
   };

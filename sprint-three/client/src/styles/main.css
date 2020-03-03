@@ -881,16 +881,21 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .upload__flex-two {
     margin-left: 1.5rem;
-    width: 100%;
+    width: 44.5rem;
   }
   .upload__description {
     padding-bottom: 0.4375rem;
   }
   .upload__form-description {
     height: 5.875rem;
+  }
+  .upload__button-container {
+    width: 100%;
   }
 }
 

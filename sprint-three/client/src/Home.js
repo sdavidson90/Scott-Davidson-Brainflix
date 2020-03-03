@@ -58,7 +58,7 @@ class Home extends React.Component {
         <div className="page__flex">
           <div>
             <About mainVideo={this.state.mainVideo} />
-            <Comments comments={[this.state.comments]} />
+            <Comments comments={this.state.comments} />
             <div className="comment__container">
               <NewComments comments={this.state.comments} />
             </div>

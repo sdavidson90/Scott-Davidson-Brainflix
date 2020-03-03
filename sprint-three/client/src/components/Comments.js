@@ -1,4 +1,3 @@
-import axios from "axios";
 import React from "react";
 
 const Comments = props => {
@@ -13,7 +12,6 @@ const Comments = props => {
               <p>JOIN THE CONVERSATION</p>
               <textarea
                 className="comments__input-info-form-comment"
-                id="asdasd"
                 name="comment"
                 rows="10"
                 cols="50"
@@ -24,15 +22,6 @@ const Comments = props => {
               <button
                 className="comments__input-info-form-submit"
                 type="submit"
-                onClick={() =>
-                  axios.post(
-                    `https://project-2-api.herokuapp.com/videos/${this.props.match.params.id}?api_key=6b4fc32f-451c-43e7-ad20-e5ea94febd8a`,
-                    {
-                      name: "BrainStation Man",
-                      comment: props.comments.value
-                    }
-                  )
-                }
               >
                 COMMENT
               </button>

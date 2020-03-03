@@ -24,6 +24,3 @@ export default class App extends Component {
     );
   }
 }
-
-//UUID
-//POST COMMENTS

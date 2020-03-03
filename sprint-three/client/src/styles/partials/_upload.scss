@@ -116,9 +116,10 @@
     }
     &__flex {
       display: flex;
+      flex-wrap: wrap;
       &-two {
         margin-left: 1.5rem;
-        width: 100%;
+        width: 44.5rem;
       }
     }
     &__description {
@@ -128,6 +129,9 @@
     }
     &__form-description {
       height: 5.875rem;
+    }
+    &__button-container {
+      width: 100%;
     }
   }
 }
